@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "743541020979",
+    "project_id": "effective-mobile",
+    "storage_bucket": "effective-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743541020979:android:0c0ee00b70e62d815cc646",
+        "android_client_info": {
+          "package_name": "com.example.effectivemobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743541020979-pknbkk6dbj7857idpbnc16nq9k3rh8s2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUTasLGO8rYo1r7NKRKQ9mU3QOymu4Y5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743541020979-pknbkk6dbj7857idpbnc16nq9k3rh8s2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

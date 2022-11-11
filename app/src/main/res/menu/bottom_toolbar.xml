@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/explorer_item"
+        android:icon="@drawable/ic_item_1_main"
+        android:title="@string/explorer" />
+    <item
+        android:id="@+id/cart_item"
+        android:icon="@drawable/ic_item_2_my_cart"
+        android:title="@string/cart" />
+    <item
+        android:id="@+id/liked_item"
+        android:icon="@drawable/ic_item_3_favorite"
+        android:title="@string/favourite" />
+    <item
+        android:id="@+id/profile_item"
+        android:icon="@drawable/ic_item_4_profile"
+        android:title="@string/profile" />
+</menu>

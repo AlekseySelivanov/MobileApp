@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Effective Mobile"
+include ':app'
+include ':core'
+include ':features'
+include ':features:home_screen'
+include ':features:product_details_screen'
+include ':navigation'
+include ':features:cart_screen'
+include ':features:liked_screen'
+include ':features:map_screen'
