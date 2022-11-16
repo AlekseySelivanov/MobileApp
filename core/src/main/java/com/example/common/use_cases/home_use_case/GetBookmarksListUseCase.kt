@@ -1,7 +1,7 @@
 package com.example.common.use_cases.home_use_case
 
 import androidx.lifecycle.LiveData
-import com.example.common.models.home_model.PhoneBookmark
+import com.example.common.models.likedModel.PhoneBookmark
 import com.example.common.repositories.homeRepositories.AppRepository
 import javax.inject.Inject
 

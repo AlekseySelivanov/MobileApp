@@ -1,27 +1,29 @@
 package com.example.effectivemobile.ui
 
 import android.os.Bundle
-import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
-import com.example.cart_screen.MyCartFragment
+import com.example.cart_screen.di.CartInjectorHelper
+import com.example.cart_screen.ui.MyCartFragment
 import com.example.common.constants.Constants.MAIN_ACTIVITY_TAG
 import com.example.common.constants.extensions.launchWhenStarted
 import com.example.common.di.CoreInjectorHelper
 import com.example.effectivemobile.R
 import com.example.effectivemobile.databinding.ActivityMainBinding
 import com.example.effectivemobile.di.mainActivity.DaggerMainActivityComponent
-import com.example.effectivemobile.ui.splash_screen.SplashActivity
-import com.example.home_screen.home_screen.HomeFragment
-import com.example.liked_screen.presentation.LikedFragment
+import com.example.home_screen.home_screen.di.HomeScreenInjectorHelper
+import com.example.home_screen.home_screen.ui.HomeFragment
+import com.example.liked_screen.di.LikedScreenInjectorHelper
+import com.example.liked_screen.ui.LikedFragment
 import com.example.map_screen.MapsFragment
 import com.example.navigation.Destination
 import com.example.navigation.setFragmentNavigationListener
-import com.example.product_details_screen.products_details_screen.ProductDetailsFragment
+import com.example.product_details_screen.di.ProductScreenInjectorHelper
+import com.example.product_details_screen.ui.ProductDetailsFragment
 import com.google.android.material.badge.BadgeDrawable
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
@@ -42,9 +44,12 @@ class MainActivity : AppCompatActivity() {
         val component =
             DaggerMainActivityComponent.builder()
                 .coreComponent(CoreInjectorHelper.provideCoreComponent(applicationContext))
+                .cartComponent(CartInjectorHelper.provideCartComponent(applicationContext))
+                .homeScreenComponent(HomeScreenInjectorHelper.provideHomeScreenComponent(applicationContext))
+                .likedScreenComponent(LikedScreenInjectorHelper.provideLikedScreenComponent(applicationContext))
+                .productDetailsScreenComponent(ProductScreenInjectorHelper.provideProductDetailsScreenComponent(applicationContext))
                 .build()
         component.provideMainActivityComponent(this)
-
         if (savedInstanceState == null){
             supportFragmentManager.beginTransaction().apply {
                 replace(binding.fragmentContainer.id, HomeFragment.newInstance())

@@ -5,7 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
-import com.example.cart_screen.MyCartFragment
 import com.example.effectivemobile.databinding.ActivitySplashBinding
 import com.example.effectivemobile.ui.MainActivity
 import kotlinx.coroutines.Dispatchers

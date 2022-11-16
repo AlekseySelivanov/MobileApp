@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Transformations
 import com.example.common.dataSource.local.database.AppLocalDataSource
 import com.example.common.mapper.AppMapper
-import com.example.common.models.home_model.PhoneBookmark
+import com.example.common.models.likedModel.PhoneBookmark
 
 import javax.inject.Inject
 

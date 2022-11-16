@@ -2,7 +2,7 @@ package com.example.effectivemobile.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asFlow
-import com.example.common.models.home_model.PhoneBookmark
+import com.example.common.models.likedModel.PhoneBookmark
 import com.example.common.use_cases.home_use_case.GetBookmarksListUseCase
 import kotlinx.coroutines.flow.*
 import javax.inject.Inject

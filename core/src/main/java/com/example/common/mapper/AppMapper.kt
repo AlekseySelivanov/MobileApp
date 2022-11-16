@@ -1,7 +1,7 @@
 package com.example.common.mapper
 
 import com.example.common.dataSource.local.database.liked_database.PhoneBookmarkDB
-import com.example.common.models.home_model.PhoneBookmark
+import com.example.common.models.likedModel.PhoneBookmark
 
 import javax.inject.Inject
 
